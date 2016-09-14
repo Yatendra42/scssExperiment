@@ -1,0 +1,35 @@
+body {
+  font: 16px/25px Roboto, Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #bbbbbb; }
+
+.primary, .secondary {
+  background: red;
+  color: #000; }
+
+.secondary {
+  background: #00f; }
+
+header {
+  height: 100px;
+  background: #888888; }
+
+nav {
+  width: 100%;
+  display: block;
+  background: #000; }
+  nav ul li {
+    display: inline-block; }
+    nav ul li a {
+      display: inline-block;
+      padding: 10px;
+      background: #8a1; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=style.css.map */

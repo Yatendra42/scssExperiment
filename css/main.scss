@@ -1,0 +1,53 @@
+$font-stack: Roboto, Arial, Helvetica, sans-serif;
+$primary-color: #000;
+$secondary-color: #333;
+$light-black:#888888;
+  
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+body{
+    font: 16px/25px $font-stack ;
+    color:$primary-color;
+    background:#bbbbbb;
+   }
+
+
+
+.primary{
+    background:red;
+    color:#000;
+}
+
+
+.secondary{
+    @extend .primary;
+    background: #00f;
+}
+
+header{ height:100px; background:$light-black; }
+nav{
+    
+    width:100%;
+    display: block;
+    background: #000;
+    ul{
+        
+        li{
+            display: inline-block;
+            a{
+                display: inline-block; padding:10px; background:#8a1;
+                
+            }
+        }
+    }
+}
+
+
+.box { @include border-radius(10px); }

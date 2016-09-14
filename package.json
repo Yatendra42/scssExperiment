@@ -1,0 +1,27 @@
+{
+  "name": "scss_experiment",
+  "version": "1.0.0",
+  "description": "scss demo experiment for testing purpose.",
+  "main": "index.html",
+  "dependencies": {
+    "npm": "^3.10.6",
+    "sass": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yatendra42/scssExperiment.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Yatendra Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yatendra42/scssExperiment/issues"
+  },
+  "homepage": "https://github.com/Yatendra42/scssExperiment#readme"
+}
