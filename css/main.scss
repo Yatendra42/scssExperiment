@@ -2,6 +2,7 @@ $font-stack: Roboto, Arial, Helvetica, sans-serif;
 $primary-color: #000;
 $secondary-color: #333;
 $light-black:#888888;
+$light-blue:blue;
   
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -10,6 +11,20 @@ $light-black:#888888;
        -o-border-radius: $radius;
           border-radius: $radius;
 }
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+
 
 
 body{
@@ -42,7 +57,7 @@ nav{
         li{
             display: inline-block;
             a{
-                display: inline-block; padding:10px; background:#8a1;
+                display: inline-block; padding:10px; background:#8a1; color:$light-blue;
                 
             }
         }
@@ -51,3 +66,12 @@ nav{
 
 
 .box { @include border-radius(10px); }
+
+.box{ @include transform(scale(10deg)  rotate(300deg)); }
+
+.box{ @include translate(10,20) }
+
+.newBox{ @include translate(10,20); @include border-radius(10px);   }
+
+
+

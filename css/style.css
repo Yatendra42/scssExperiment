@@ -23,9 +23,36 @@ nav {
     nav ul li a {
       display: inline-block;
       padding: 10px;
-      background: #8a1; }
+      background: #8a1;
+      color: blue; }
 
 .box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+.box {
+  -webkit-transform: scale(10deg) rotate(300deg);
+  -moz-transform: scale(10deg) rotate(300deg);
+  -ms-transform: scale(10deg) rotate(300deg);
+  -o-transform: scale(10deg) rotate(300deg);
+  transform: scale(10deg) rotate(300deg); }
+
+.box {
+  -webkit-transform: translate(10, 20);
+  -moz-transform: translate(10, 20);
+  -ms-transform: translate(10, 20);
+  -o-transform: translate(10, 20);
+  transform: translate(10, 20); }
+
+.newBox {
+  -webkit-transform: translate(10, 20);
+  -moz-transform: translate(10, 20);
+  -ms-transform: translate(10, 20);
+  -o-transform: translate(10, 20);
+  transform: translate(10, 20);
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
